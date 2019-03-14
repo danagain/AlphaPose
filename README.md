@@ -135,6 +135,8 @@ Results on PoseTrack Challenge validation set:
   ```
 2. Install [Torch](https://github.com/torch/distro) and [TensorFlow](https://www.tensorflow.org/install/)(verson >= 1.2). After that, install related dependencies by:
   ```Shell
+  sudo apt-get install python-tk
+  sudo apt-get install libhdf5-serial-dev
   chmod +x install.sh
   ./install.sh
   ```
