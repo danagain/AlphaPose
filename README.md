@@ -140,6 +140,8 @@ Results on PoseTrack Challenge validation set:
   sudo apt-add-repository ppa:jonathonf/ffmpeg-3
   sudo apt-get update
   sudo apt-get install ffmpeg
+  - After cuda 5.1 installation,make sure the path variable is set in .bashrc as follows
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/
   chmod +x install.sh
   ./install.sh
   ```
