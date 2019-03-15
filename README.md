@@ -154,6 +154,7 @@ Results on PoseTrack Challenge validation set:
 ## Quick Start
 - **Demo**:  Run AlphaPose for all images in a folder and visualize the results with:
 ```
+./run.sh --video examples/input.mp4 --outdir examples/results --vis --format cmu --mode fast
 ./run.sh --indir examples/demo/ --outdir examples/results/ --vis
 ```
 
