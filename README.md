@@ -137,6 +137,9 @@ Results on PoseTrack Challenge validation set:
   ```Shell
   sudo apt-get install python-tk
   sudo apt-get install libhdf5-serial-dev
+  sudo apt-add-repository ppa:jonathonf/ffmpeg-3
+  sudo apt-get update
+  sudo apt-get install ffmpeg
   chmod +x install.sh
   ./install.sh
   ```
