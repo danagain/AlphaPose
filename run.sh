@@ -52,8 +52,10 @@ if [ -n "$VIDEO_FILE" ]; then
     if ! [ -e "$INPUT_PATH" ]; then
         mkdir $INPUT_PATH
     fi
-    ffmpeg -hide_banner -nostats -loglevel 0 -i ${VIDEO_FILE} -r 10 -f image2 ${INPUT_PATH}"/%05d.jpg"
+    ffmpeg -hide_banner -nostats -loglevel 0 -i ${VIDEO_FILE} -r 30 -f image2 ${INPUT_PATH}"/%05d.jpg"
 fi
+echo 'Cropping images to bounding box dimensions ...'
+python ${WORK_PATH}/crop-images.py
 
 # echo $INPUT_PATH
 # echo $OUTPUT_PATH
