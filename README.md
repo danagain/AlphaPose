@@ -135,6 +135,13 @@ Results on PoseTrack Challenge validation set:
   ```
 2. Install [Torch](https://github.com/torch/distro) and [TensorFlow](https://www.tensorflow.org/install/)(verson >= 1.2). After that, install related dependencies by:
   ```Shell
+  sudo apt-get install python-tk	
+  sudo apt-get install libhdf5-serial-dev	
+  sudo apt-add-repository ppa:jonathonf/ffmpeg-3	
+  sudo apt-get update	
+  sudo apt-get install ffmpeg	
+  - After cuda 5.1 installation, make sure the path variable is set in .bashrc as follows	
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/
   chmod +x install.sh
   ./install.sh
   ```
